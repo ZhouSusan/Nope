@@ -15,7 +15,7 @@ class Inquiry:
 
     @classmethod
     def get_by_email(cls, data):
-        query = "SELECT * FROM Inquiries WHERE email = %(email)s"
+        query = "SELECT * FROM inquiries WHERE email = %(email)s"
         result = connectToMySQL(DATABASE).query_db(query, data)
         if not result:
             return False
@@ -23,7 +23,7 @@ class Inquiry:
 
     @classmethod
     def get_all(cls):
-        query= "SELECT * FROM Inquiries;"
+        query= "SELECT * FROM inquiries;"
         results = connectToMySQL(DATABASE).query_db(query)
         emails = []
         for row in results:
@@ -32,13 +32,13 @@ class Inquiry:
 
     @classmethod
     def get_one(cls, data):
-        query = "SELECT * FROM Inquiries WHERE id = %(id)s;"
+        query = "SELECT * FROM inquiries WHERE id = %(id)s;"
         result = connectToMySQL(DATABASE).query_db(query, data)
         return cls(result[0])
 
     @classmethod
     def save(cls, data ):
-        query = "INSERT INTO Inquiries ( first_name, email, message ) VALUES ( %(first_name)s, %(email)s, %(message)s );"
+        query = "INSERT INTO inquiries ( first_name, email, message ) VALUES ( %(first_name)s, %(email)s, %(message)s );"
         return connectToMySQL(DATABASE).query_db( query, data )
 
     @staticmethod

@@ -14,7 +14,7 @@ class Email:
 
     @classmethod
     def get_by_email(cls, data):
-        query = "SELECT * FROM Emails WHERE email = %(email)s"
+        query = "SELECT * FROM emails WHERE email = %(email)s"
         result = connectToMySQL(DATABASE).query_db(query, data)
         if not result:
             return False
@@ -22,7 +22,7 @@ class Email:
 
     @classmethod
     def get_all(cls):
-        query= "SELECT * FROM Emails;"
+        query= "SELECT * FROM emails;"
         results = connectToMySQL(DATABASE).query_db(query)
         emails = []
         for row in results:
@@ -31,23 +31,23 @@ class Email:
 
     @classmethod
     def get_one(cls, data):
-        query = "SELECT * FROM Emails WHERE id = %(id)s;"
+        query = "SELECT * FROM emails WHERE id = %(id)s;"
         result = connectToMySQL(DATABASE).query_db(query, data)
         return cls(result[0])
 
     @classmethod
     def save(cls, data ):
-        query = "INSERT INTO Emails ( email ) VALUES ( %(email)s );"
+        query = "INSERT INTO emails ( email ) VALUES ( %(email)s );"
         return connectToMySQL(DATABASE).query_db( query, data )
 
     @classmethod
     def update(cls, data):
-        query = "Update Emails SET email = %(new_email)s WHERE email = %(email)s;"
+        query = "Update emails SET email = %(new_email)s WHERE email = %(email)s;"
         return connectToMySQL(DATABASE).query_db( query, data )
 
     @classmethod
     def destroy(cls,data):
-        query = "DELETE FROM Emails WHERE email = %(email)s;"
+        query = "DELETE FROM emails WHERE email = %(email)s;"
         return connectToMySQL(DATABASE).query_db(query,data)
 
     @staticmethod
@@ -56,7 +56,7 @@ class Email:
         if not EMAIL_REGEX.match(email['email']):
             flash("Invalid email!", 'invalid_email_error') 
             return False      
-        query = "SELECT * FROM Emails WHERE email = %(email)s;"
+        query = "SELECT * FROM emails WHERE email = %(email)s;"
         results = connectToMySQL(DATABASE).query_db(query,email)
         if results != False and len(results) != 0:
             flash("Emails already taken.", 'duplicate_email_error')
@@ -69,7 +69,7 @@ class Email:
         if not EMAIL_REGEX.match(email['new_email']):
             flash("Invalid email!", 'invalid_new_email_error') 
             return False      
-        query = "SELECT * FROM Emails WHERE email = %(new_email)s;"
+        query = "SELECT * FROM emails WHERE email = %(new_email)s;"
         results = connectToMySQL(DATABASE).query_db(query,email)
         if results != False and len(results) != 0:
             flash("Emails already taken.", 'duplicate_new_email_error')
