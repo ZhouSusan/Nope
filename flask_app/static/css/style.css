@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Nav-bar */
+
+nav {
+    margin-bottom: 60px;
+}
+
+.navbar-collapse > ul > li {
+    margin-left: 150px;
+    font-size: xx-large;
+}
+
+.d-flex > a,
+.d-flex > p {
+    margin-right: 25px;
+    font-size: medium;
+}
+
+.dropbtn {
+    font-size: 29px;
+    background-color: rgb(32, 29, 29);
+    color: rgb(34, 65, 238);
+    padding: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* index page*/
+#image-box {
+    background-color: lightgreen;
+    width: 1200px;
+    margin-top: 100px;
+    margin-left: 55px;
+    padding-top: 60px;
+}
+
+#background-img {
+    position: relative;
+    top: 25px;
+    left: 62px;
+}
+
+#background-img, .welcome-text, form {
+    margin-left: 160px;
+}
+
+#background-img > img{
+    width: 800px;
+    border: 15px solid white;
+} 
+
+.mailing-list{
+    margin-top: 150px;
+}
+
+.user-input {
+    margin-top: -50px;
+    margin-left: 70px;
+}
+
+.subscrib-btn {
+    margin-top: -90px;
+}
+
+.other-btn {
+    margin-top: -50px;
+    margin-left: 10px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.update-btn {
+    margin-left: 5px;
+}
+
+.first-text {
+    position: relative;
+    bottom: 290px;
+    left: 265px;
+    font-family: cursive;
+    font-style: oblique;
+    font-size: 6.5rem;
+}
+
+.bottom-box {
+    margin-left: 140px;
+}
+
+/*contact form */
+.contact-box {
+    margin-left: 405px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-top: 80px;
+}
+
+.contact-btn {
+    margin-top: 40px;
+    margin-left: 18px;
+}
+
+
+
+/* About HTML */
+.about-box {
+    margin-top: 90px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    padding-right: 75px;
+    font-size: x-large;
+    background-color: lightseagreen;
+    width: 1000px;
+}
+
+/*Characters HTML*/
+
+.character-box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+
+.character-description > p {
+    font-size: x-large;
+    margin-left: 50px;
+    margin-top: 47px;
+}
+
+.character-description{
+    background-color: rgb(58, 184, 184);
+    width: 600px;
+}
+
+.char-video {
+    margin-left: 200px;
+}
+
+/* Mage*/
+.mage-ability{
+    list-style-type: none;
+    font-size: x-large;
+    position: relative;
+    bottom: 52px;
+    left: 125px;
+}
+
+/*contact page */
+.submit-btn {
+    width: 100px;
+    height: 50px;
+    margin-left: 30px;
+}
