@@ -3,14 +3,24 @@
     margin: 0;
 }
 
+.container{
+    width: 1172px;
+}
+
 /* Nav-bar */
 
 nav {
     margin-bottom: 60px;
+    background: black;
+}
+
+#nav-bar {
+    width: auto;
+    height: 200px;
 }
 
 .navbar-collapse > ul > li {
-    margin-left: 150px;
+    margin-left: 125px;
     font-size: xx-large;
 }
 
@@ -58,25 +68,26 @@ nav {
 /* index page*/
 #image-box {
     background-color: lightgreen;
-    width: 1200px;
+    width: 815px;
     margin-top: 100px;
-    margin-left: 55px;
+    margin-left: 130px;
     padding-top: 60px;
 }
 
 #background-img {
     position: relative;
-    top: 25px;
-    left: 62px;
+    left: 12.5%;
 }
 
-#background-img, .welcome-text, form {
+.welcome-text, form {
     margin-left: 160px;
 }
 
 #background-img > img{
-    width: 800px;
+    width: 75%;
+    height: 25%;
     border: 15px solid white;
+    margin-top: 5%;
 } 
 
 .mailing-list{
@@ -102,22 +113,19 @@ nav {
     flex-direction: row;
 }
 
-.update-btn {
-    margin-left: 5px;
-}
-
 .first-text {
     position: relative;
-    bottom: 290px;
-    left: 265px;
+    bottom: 225px;
+    left: 123px;
     font-family: cursive;
     font-style: oblique;
     font-size: 6.5rem;
 }
 
 .bottom-box {
-    margin-left: 140px;
+    margin-left: 5%;
 }
+
 
 /*contact form */
 .contact-box {
@@ -129,11 +137,20 @@ nav {
 }
 
 .contact-btn {
-    margin-top: 40px;
-    margin-left: 18px;
+    margin-top: 46%;
+    margin-left: 15%;
 }
 
+.unsubscribe-btn{
+    margin-top: 2%;
+    margin-left: 7%;
+}
 
+.update-btn {
+    width: 51%;
+    margin-top: -28%;
+    margin-left: 60%;
+}
 
 /* About HTML */
 .about-box {
@@ -184,4 +201,32 @@ nav {
     width: 100px;
     height: 50px;
     margin-left: 30px;
+}
+
+
+.button {
+    background-color: #1c87c9;
+    border: none;
+    color: white;
+    padding: 2px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 2px 1px;
+    cursor: pointer;
+}
+
+@media (min-width: 300px) {
+    .navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    }
+}
+
+@media only screen and (min-width: 300px) {
+    body {
+        width: 100%;
+        background: black
+    }
 }
