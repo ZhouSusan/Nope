@@ -184,7 +184,18 @@ nav {
 }
 
 .char-video {
-    margin-left: 200px;
+    margin-top: 10%;
+    margin-left: 8%;
+}
+
+strong {
+    font-size: xx-large;
+}
+
+/* Berserker*/
+
+.character-info {
+    width: 100%
 }
 
 /* Mage*/
