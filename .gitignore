@@ -133,3 +133,4 @@ flask_app/config/mysqlconnection.py
 Pipfile
 Pipfile.lock
 requirements.txt
+mail-demo.py
