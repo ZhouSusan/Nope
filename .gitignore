@@ -1,3 +1,9 @@
+flask_app/configuration.py
+flask_app\config\mysqlconnection.py
+Pipfile
+Pipfile.lock
+requirements.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -128,8 +134,3 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-flask_app/configuration.py
-flask_app\config\mysqlconnection.py
-Pipfile
-Pipfile.lock
-requirements.txt
