@@ -11,6 +11,7 @@
         <li>MySQL for data persistence  </li>
         <li>Email and form validations</li>
         <li>Automatic email with mailing subscriptions</li>
+        <li>This is the initial prototype to let the team visual see the model</li>
       </ul>
     </td>
     <td style="width:50%">
