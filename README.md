@@ -1,13 +1,9 @@
 # Nope
-
-<h2>
-  Nope
-</h2>
 <table>
   <tr>
     <td style="width:50%">
       <ul>
-        <li>Promotional Gaming Websites with Characters Video</li>
+        <li>Promotional Gaming Website with Characters Video</li>
         <li>MySQL for data persistence  </li>
         <li>Email and form validations</li>
         <li>Automatic email with mailing subscriptions</li>
