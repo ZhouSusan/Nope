@@ -7,7 +7,7 @@
   <tr>
     <td style="width:50%">
       <ul>
-        <li>Promtional Gaming Websites with Charcters Video</li>
+        <li>Promotional Gaming Websites with Characters Video</li>
         <li>MySQL for data persistence  </li>
         <li>Email and form validations</li>
         <li>Automatic email with mailing subscriptions</li>
